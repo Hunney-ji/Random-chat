@@ -14,7 +14,7 @@ const mongoose = require('mongoose');
 const mongoStore=require("connect-mongo")
 const dburl=process.env.ATLAS_URL;
 async function main(){
-    await mongoose.connect("mongodb://127.0.0.1:27017/champ")
+    await mongoose.connect(dburl)
 }
 main()
 .then(()=>{
@@ -24,18 +24,18 @@ main()
     console.log(err)
 })
 const upload=require("./multer.js")
-// const Store=mongoStore.create({
-//     mongoUrl:dburl,
-//     crypto:{
-//         secret:process.env.SECRET,
-//         touchAfter:24*3600
-//     }
-// })
+const Store=mongoStore.create({
+    mongoUrl:dburl,
+    crypto:{
+        secret:process.env.SECRET,
+        touchAfter:24*3600
+    }
+})
 // Store.on("error",()=>{
 //     console.log("err in store")
 // })
 app.use(session({
-    // Store,
+    Store,
     resave:false,
     saveUninitialized:false,
     secret:process.env.SECRET
@@ -85,7 +85,7 @@ app.post("/register",async(req,res,next)=>{
     try{let {fullname,email ,username ,password}=req.body;
     const newuser = new userModel({email,username,fullname});
     const registerUser = await userModel.register(newuser,password);
-    console.log(registerUser);
+   
     req.login(registerUser,(err)=>{
         if(err){
             return next(err);
