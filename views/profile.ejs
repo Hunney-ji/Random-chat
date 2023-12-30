@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./pro.css">
+</head>
+<body>
+    <nav>
+        <div id="nav">
+             <div class="logo">
+                <h1>Chit Chat</h1>
+                <a>Home</a>
+             </div>
+            <div class="btn">
+                   <input name="usename" placeholder="Search" type="text">
+        
+                    <button><i class="ri-search-2-line"></i></button> 
+          
+            </div>     
+               <div class="prof">
+            <img src="https://source.unsplash.com/random/100x100/?profile">
+        </div></div>
+        
+    </nav>
+    <div class="mprof">
+        <div class="pic">
+            <div class="img">
+                <i class="ri-arrow-left-line back"></i>
+                <img src="https://source.unsplash.com/random/150x150/?profile" >
+            </div>
+            <div class="name">
+                <h3><%=user.username%></h3>
+                <p>@<%=user.fullname%></p>
+            </div>
+            <div class="edit">
+                <button id="edit">Edit profile</button>
+            </div>
+           <a href="/logout"><div id="logout">
+            <i class="ri-logout-box-line"></i> <p>Logout</p>
+        </div></a> 
+        </div>
+
+        <div id="page1">
+         
+          <div class="allchat">
+            <div class="over">
+                <div class="mw">
+                    <%for(msg of allmsgs){
+                        if(id.equals(msg.id)){%>
+                      <div class="right"><p><%=msg.msg%></p>
+                  </div><%}if((id!=msg.id)&&(id!="join")){%>
+                  <div class="left"><p><%=msg.msg%></p>
+                  </div><% }
+                  if(id.equals("join")){console.log("hello")%>
+                    <div class="joinchat"><p><%=msg.msg%></p>
+                    </div><% }}%>
+
+                </div>
+              
+            
+        </div>
+           </div>
+        <div class="imsg">
+            <form method="post" action="/profile/msg">
+                    <input name="msgs" type="text" placeholder="type msgs">
+            <button><i class="ri-send-plane-2-line"></i> </button> 
+            </form>
+            
+    </div>
+    </div>
+    
+    <script src="./prof.js"></script>
+</body>
+</html>
+  <!-- <div class="yo">         
+            </div> -->
+            <!-- <div class="over">
+                <%for(chatbox of allchatboxes){%>
+                    <a href="/profile/<%=chatbox._id%>"><div class="chatbox"><div class="prof">
+                     <img src="https://source.unsplash.com/random/100x100/?profile">
+                 </div> <p><%=chatbox.username%></p></div></a> 
+     
+                 <%}%>
+            </div> -->

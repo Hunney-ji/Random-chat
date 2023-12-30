@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:#121212;
+    color:white
+}
+/* .lb{
+   color: grey;
+} */
+#page1{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    overflow: hidden; 
+}
+h1{
+    position: absolute;
+    
+}
+.inc{
+    color:red;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#page2{
+    border:2px solid white;
+    width:400px;
+    height: 600px;
+}
+/* .lf{
+    margin-top: 200px;
+} */
+.move{
+    margin-top: 10%;
+    margin-left: 20%;
+    font-size: 10rem;
+    opacity:0.3;
+    color:#724ae8;
+    z-index: 2;
+ 
+}
+
+h2{
+    margin-bottom: 10px;
+    position: relative;
+    margin-top:180px;
+    margin-left: 42%;
+    z-index: 3;
+}
+.zila{
+    z-index: 2;
+    /* margin-top: 10%; */
+    margin-left: 50%;
+    font-size: 10rem;
+    bottom: 30%;
+    opacity:0.3;
+    color:#724ae8
+}
+form{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 300px;
+
+
+}
+/* img{
+    height:200px;
+    width:400px
+} */
+/* .fin{
+    margin-top: 10rem;
+} */
+p{
+    margin-left: 38%;
+}
+a{
+    color: blue;
+}
+input{
+    font-size: 1.4rem;
+    margin-bottom:10px;
+    padding:0.5rem 3rem;
+    border-radius: 20px;
+    width:15%;
+    margin-left: 35%;
+    border:2px solid white;
+    z-index: 5;
+    background: transparent;
+   
+}
+button{
+    border:2px solid red;
+    background-color: black;
+    color:red;
+    font-size: 2rem;
+    padding:0 3rem;
+  width:20%;
+    border-radius: 20px;
+  margin-top: 5px;
+    margin-left: 35%
+}
+button:hover{
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+}

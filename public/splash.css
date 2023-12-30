@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+nav{
+    /* position: fixed; */
+    margin-top: 0;
+    width:100vw;
+    height:6rem;
+    background-color: #292323;
+}
+#page1{
+    position: relative;
+}
+.slider{
+    position: relative;
+    color:white;
+    width:500px;
+    height:300px;
+}
+.siden{
+    background-color: #292323;
+    height: 100vh;
+    width:250px;
+    /* position: fixed; */
+}
+button a{
+    text-decoration: none;
+    color: red;
+}
+.btn{
+    display: flex;
+    background: transparent;
+    margin-left: 60%;
+   
+}
+button{
+    margin-top: 20px;
+    border:2px solid red;
+    background-color: black;
+    color:red;
+    font-size: 2rem;
+    padding:3rem 3 rem;
+  width:9rem;
+  height:3rem;
+    border-radius: 20px;
+  margin-left: 10%;
+   
+}

@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+a{
+    background: transparent;
+}
+.logo {
+    background: transparent;
+   margin-left: 30px;
+   display: flex;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: transparent;
+    margin-left: 100px;
+    margin-top: 5px;
+    opacity: 0.5;
+}
+.logo a:hover{
+    opacity: 1;
+    scale:1.2;
+    cursor: pointer;
+
+}
+.logo h1{
+    background: transparent;
+    font-size: 2rem;
+    color:#724ae8;
+}
+nav{
+    /* position: fixed; */
+    margin-top: 0;
+    width:100vw;
+    height:4rem;
+    background-color: #292323;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div{
+    background: transparent;
+}
+.prof{
+    height: 40px;
+    width: 40px;
+    margin-right: 60px;
+    border: 2px solid mediumslateblue;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+.prof img{
+    height: 100%;
+    width: 100%;
+  border: 1pxs solid purple;
+  border-radius: 50%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
+nav input{
+    font-size: 1.0rem;
+    margin-bottom:10px;
+    padding:0.5rem 0.5rem;
+    height:1rem;
+    
+    border-radius: 20px;
+  color:black;
+    margin-left: 50%;
+    border:2px solid black;
+    z-index: 5;
+    background: White;
+    margin-top:20px;
+    margin-bottom: 18px;
+}
+button{
+    
+    border:none;
+    background:transparent;
+    
+    font-size: 1.5rem;
+    padding:3rem 3 rem;
+  width:9rem;
+  height:3rem;
+    border-radius: 20px;
+  margin-left: 2%;
+   
+}
+/* nav button{
+    /* margin-bottom: 18px; */
+/* } */ */
+button i{
+    background: transparent;
+    opacity: 1;
+    
+}
+i{
+    background: transparent;
+    opacity: 0.5;
+}
+button i:hover{
+    cursor: pointer;
+    color: red;
+    opacity: 1;
+    scale: 1.2;
+}
+.mprof{
+    display: flex;
+    margin-top: 10px;
+}
+.pic{
+    position: fixed;
+    border-radius: 20px;
+    height:100vw;
+    width:20rem;
+    background-color:#292323 ;
+}
+.name{
+    background: transparent;
+    margin-top:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name h3{
+    font-size: 1.6rem;
+    background: transparent;
+   
+}
+.name p{
+    background: transparent;
+    opacity: 0.7;
+    
+}
+.img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+ background: transparent;
+   
+}
+.img img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid mediumslateblue;
+    margin-left: 5rem;
+}
+.back{
+    font-size: 2rem;
+   margin-left: 0;
+}
+.img i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.edit{
+    background:transparent ;
+}
+.edit #edit{
+    font-size: 1rem;
+    font-weight: 700;
+    border:2px solid black;
+    background-color: grey;
+    color: black;
+    padding:0rem 1rem;
+    height: 2rem;
+    width: 200px;
+    margin:40px;
+    margin-left: 50px;
+
+}
+#logout{
+    display: flex;
+    font-size: 2rem;
+    background: transparent;
+    color:black;
+    margin-top: 8rem;
+    margin-left: 20px;
+    align-items: center;
+}
+i{
+    background: transparent;
+}
+#logout p{
+    background: transparent;
+    font-size: 1.2rem;;
+    margin-left: 20px;
+}
+i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#logout:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+#page1{
+    width:950px;
+    height:300px;
+    /* background-color: red; */
+    margin-top: 0;
+    margin-left: 22rem;
+}
+#page1 h3{
+    color:Yellow;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+/* .cards{
+    margin-top: 30px;
+    background-color: red;
+    height:170px;
+    width: 250px;
+    border-radius: 10px;
+    position: static;
+    
+}
+.slider{
+    display: flex;
+
+   
+} */
+.allchat{
+    
+    margin-top: 10px;
+    margin-left: 150px;
+    width:25rem;
+    height:28rem;
+    border:2px solid red;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+}
+.over{
+    overflow-y: auto;
+background: transparent;
+}
+.over::-webkit-scrollbar{
+    display: none ;
+    
+}
+.over::-webkit-scrollbar-thumb{
+    bottom: 0;
+}
+.yo{
+    width:100%;
+    height:4rem;
+    background-color: #292323;
+}
+.chatbox{
+    width: 90%;
+    margin-left: 10px;
+    border:2px solid #292323;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.imsg{
+    width:25rem;
+    margin-left: 150px;
+    height: 3.5rem;
+    border:2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imsg input{
+ margin-bottom: 5px;
+  
+    padding:0.5rem 3rem;
+    border-radius: 20px;
+    width:9rem;
+  
+    border:2px solid white;
+   
+    background: transparent;
+   
+}
+/* .mw{
+    width: 270px;
+    background: transparent;
+} */
+.ismg i {
+    font-size: 2rem;
+}
+.right{
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: row-reverse;
+  
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+   background: transparent;
+   flex-wrap: wrap;
+
+    font-size: 1.5rem;
+    
+}
+.right p{
+    background-color: #724ae8;
+    border-radius: 5px 0 5px 5px;
+    padding: 0 10px;
+ 
+}
+.left p{
+ 
+    background-color:#292323;
+    border-radius: 5px 0 5px 5px;
+    padding: 0 10px;
+ 
+}
+.left{
+    display: flex;
+    
+    
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 1.5rem;
+    background-color: #292323;
+}
+.imsg button{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.joinchat{
+    margin-left:auto;
+    font-size: 1rem;
+
+}
+@media(max-width:600px){
+    .mprof{
+        margin-left:-500px;
+    }
+    .page1 .allchat{
+        width:50%;
+    }
+}
+.alert{
+    background-color: rosybrown;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
